@@ -1,0 +1,61 @@
+#header {
+  background-color: rgba(244, 190, 90, 0.307);
+}
+#header .logo {
+  width: 30%;
+}
+#header .logo img {
+  width: 150px;
+}
+#header ul {
+  width: 60%;
+}
+#header ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 45px 15px;
+  display: inline-block;
+}
+#header ul li a:hover {
+  color: orange;
+  transition: 0.4s;
+}
+#header ul li a i {
+  color: orange;
+}
+#header .nav-right #eng i {
+  color: blue;
+}
+
+#sectionOne {
+  padding: 5rem 0;
+  background-color: rgba(244, 190, 90, 0.307);
+}
+#sectionOne .box-right {
+  padding-left: 30px;
+}
+#sectionOne .box-right h1 {
+  width: 70%;
+  font-weight: 550;
+  margin: 15px 0;
+  color: rgb(50, 44, 44);
+}
+#sectionOne .box-right p {
+  width: 70%;
+  font-size: 18px;
+}
+#sectionOne .box-right a {
+  background-color: orange;
+  color: white;
+  text-decoration: none;
+  padding: 15px 30px;
+  display: inline-block;
+  margin: 20px;
+  border-radius: 25px;
+  transform: translateY(10px);
+  transition: 0.4s;
+}
+#sectionOne .box-right a:hover {
+  transform: translateY(0);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}/*# sourceMappingURL=style.css.map */

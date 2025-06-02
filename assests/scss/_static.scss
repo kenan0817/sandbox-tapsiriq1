@@ -1,0 +1,35 @@
+#header{
+    background-color: rgba(244, 190, 90, 0.307);
+    .logo{
+        width: 30%;
+        img{
+            width: 150px;
+        }
+    }
+    ul{
+        width: 60%;
+
+        li{
+            a{
+                text-decoration: none;
+                color: black;
+                padding: 45px 15px;
+                display: inline-block;
+                &:hover{
+                    color: orange; 
+                    transition: 0.4s;
+                }
+                i{
+                    color: orange
+                }
+            }
+        }
+    }
+    .nav-right{
+        #eng{
+            i{
+                color: blue
+            }
+        }
+    }
+}
