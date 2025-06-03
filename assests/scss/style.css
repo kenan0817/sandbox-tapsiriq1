@@ -1,5 +1,5 @@
 #header {
-  background-color: rgba(244, 190, 90, 0.307);
+  background-color: #fefbf6;
 }
 #header .logo {
   width: 30%;
@@ -29,7 +29,7 @@
 
 #sectionOne {
   padding: 5rem 0;
-  background-color: rgba(244, 190, 90, 0.307);
+  background-color: #fefbf6;
 }
 #sectionOne .box-right {
   padding-left: 30px;
@@ -58,4 +58,79 @@
 #sectionOne .box-right a:hover {
   transform: translateY(0);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.sectionTwo {
+  background-color: #fefbf6;
+  padding: 5rem 0;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sectionTwo .boxText h6 {
+  color: #adb2c1;
+  font-size: 22px;
+}
+.sectionTwo .boxText h2 {
+  color: #2d3f55;
+  width: 40%;
+  margin: auto;
+  font-weight: 649;
+}
+.sectionTwo .cards {
+  margin-top: 45px;
+}
+.sectionTwo .row {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+.sectionTwo .card {
+  width: 19%;
+  height: 19rem;
+  border-radius: 12px;
+  transition: 0.3s ease-out;
+}
+.sectionTwo .card i {
+  font-size: 34px;
+  margin-top: 3rem;
+}
+.sectionTwo .card h4 {
+  font-weight: 650;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: #374154;
+}
+.sectionTwo .card p {
+  font-size: 0.9rem;
+  font-weight: 490;
+  color: gray;
+}
+.sectionTwo .card #icon1 {
+  color: rgb(133, 165, 224);
+}
+.sectionTwo .card #icon2 {
+  color: #f0a2a7;
+}
+.sectionTwo .card #icon3 {
+  color: #92dbc6;
+}
+.sectionTwo .card #icon4 {
+  color: #88adea;
+}
+.sectionTwo .card a {
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 15px;
+  color: rgb(92, 11, 92);
+  font-weight: 500;
+}
+.sectionTwo .card a:hover {
+  text-decoration: underline;
+  color: #f0a2a7;
+  transition: 0.3s;
+}
+.sectionTwo .card:hover {
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }/*# sourceMappingURL=style.css.map */
