@@ -517,14 +517,14 @@
             a{
                 display: inline-block;
                 text-decoration: none;
-                color: black;
+                color: rgba(92, 91, 91, 0.699);
                 font-size: 15px;
-                font-weight: 400;
+                font-weight: 500;
                 transition: 0.4s;
                 &:hover{
-                   color: #f9b757;
-                   text-shadow: 5px 5px 10px #f9b757;
-                   transform: translateY(-7px);
+                color: #f9b757;
+                text-shadow: 5px 5px 10px #f9b757;
+                transform: translateY(-7px);
                             cursor: pointer;
                 }
                 span{
@@ -537,7 +537,7 @@
             justify-content: center;
             align-items: flex-start;
             gap: 2rem;
-            padding: 2rem 8rem;
+            padding: 3rem 8rem;
             flex-wrap: wrap;
             .boxtext{
                 flex: 1;
@@ -592,8 +592,6 @@
                         flex: 2;
                         display: flex;
                         justify-content: center;
-                        // border: solid gray;
-                        // min-width: 300px;
                         gap: 2rem;
                         .card{
                             border-color: #51555f2a;
@@ -601,14 +599,13 @@
                             padding: 4rem;
                             border-radius: 10px;
                             min-width: 200px;
-                            // text-align: center;
-                            // border: solid gray;
                             align-items: center;
                             h5{
                                 color: #202a37;
                                 font-size: 25px;
                                 span{
                                     font-size: 35px;
+                                    color: #181a1cd0;
                                 }
                                 #mo{
                                     font-size: 15px;
@@ -618,7 +615,7 @@
                             h4{
                                 font-size: 18px;
                                 font-weight: 650;
-                                color: #2b2d33;
+                                color: #2b2d33b0;
                             }
                             ul{
                             
@@ -653,4 +650,67 @@
                     }
                 }
             }
+///////////////////////sectionEight finished///////////////////////
+
+// /////////////////////sectionNine started///////////////////////
+.sectionNine{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 7rem 0;
+    background-color: #fefbf6ad;
+    .boxleft{
+        img{
+            width: 90%;
+        }
+    }
+    .boxright{
+        h2{
+            font-size: 17px;
+            font-weight: 650;
+            color: #51555fbd;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 650;
+            color: #111418d6;
+            width: 80%;
+            margin-top: 15px;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 500;
+            color: #51555fcb;
+            width: 76%;
+            margin-top: 25px;
+        }
+        a{
+            display: inline-block;
+            text-decoration: none;
+            background-color: #f9b758;
+            color: white;
+            padding: 9px 21px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: 650;
+            transition: 0.4s;
+            margin-top: 1.5rem;
+            &:hover{
+                box-shadow: 5px 5px 10px #f9b757;
+                transform: translateY(-5px);
+                cursor: pointer; 
+            }
+        }
+    }
+}
+.images{
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6rem;
+    background-color: #fefbf6ab;
+    img{
+        width: 85px;
+        
+    }
+}
 
