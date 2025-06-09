@@ -66,6 +66,10 @@
   text-align: center;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+.sectionTwo .row {
+  display: flex;
+  justify-content: space-around;
+}
 .sectionTwo .boxText h6 {
   color: #adb2c1;
   font-size: 22px;
@@ -78,13 +82,6 @@
 }
 .sectionTwo .cards {
   margin-top: 45px;
-}
-.sectionTwo .row {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  gap: 18px;
 }
 .sectionTwo .card {
   width: 19%;
@@ -140,32 +137,29 @@
   background-color: #fefbf6;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.sectionThree .container .row {
-  padding: 7rem;
-}
-.sectionThree .container .row .boxLeft h2 {
+.sectionThree .boxLeft h2 {
   color: #afb0b1;
   font-size: 17px;
   font-weight: 500;
 }
-.sectionThree .container .row .boxLeft h3 {
+.sectionThree .boxLeft h3 {
   font-size: 30px;
   font-weight: 650;
   width: 90%;
   color: #2e3d51;
 }
-.sectionThree .container .row .boxLeft p {
+.sectionThree .boxLeft p {
   font-size: 14px;
   font-weight: 400;
   color: #606277;
   width: 75%;
 }
-.sectionThree .container .row .boxLeft form input {
+.sectionThree .boxLeft form input {
   border: 1px solid gray;
   border-radius: 5px;
   padding: 10px 20px;
 }
-.sectionThree .container .row .boxLeft form button {
+.sectionThree .boxLeft form button {
   border: none;
   background-color: #f9b757;
   padding: 13px 24px;
@@ -173,10 +167,10 @@
   border-radius: 10px;
   transition: 0.4s;
 }
-.sectionThree .container .row .boxLeft form button:hover {
+.sectionThree .boxLeft form button:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-.sectionThree .container .row .boxRight img {
+.sectionThree .boxRight img {
   width: 100%;
   margin: 0 auto;
   display: block;
@@ -187,35 +181,25 @@
   padding: 7rem 0;
   background-color: #fefbf6;
 }
-.sectionFour .container .row {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-.sectionFour .container .row .boxOne {
-  width: 45%;
-  margin-left: 9rem;
-}
-.sectionFour .container .row .boxOne h2 {
+.sectionFour .boxOne h2 {
   font-size: 20px;
   color: #a8afb9;
   font-weight: 600;
 }
-.sectionFour .container .row .boxOne h3 {
+.sectionFour .boxOne h3 {
   font-weight: 700;
   color: #343f53;
   width: 80%;
   font-size: 28px;
 }
-.sectionFour .container .row .boxOne p {
+.sectionFour .boxOne p {
   color: #51555f;
   font-size: 14px;
   margin-top: 25px;
   font-weight: 450;
   width: 75%;
 }
-.sectionFour .container .row .boxOne a {
+.sectionFour .boxOne a {
   display: inline-block;
   text-decoration: none;
   padding: 9px 16px;
@@ -227,25 +211,24 @@
   margin-top: 20px;
   transition: 0.4s;
 }
-.sectionFour .container .row .boxOne a:hover {
+.sectionFour .boxOne a:hover {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.sectionFour .container .row .boxTwo {
-  display: flex;
-  align-items: end;
-  flex-direction: column;
-  gap: 2rem;
-}
-.sectionFour .container .row .boxTwo .card {
+.sectionFour .boxTwo .card {
   position: relative;
   padding: 30px 0;
-  width: 35%;
+  width: 90%;
   border-radius: 15px;
+  margin: 20px 0;
+  transition: 0.4s;
 }
-.sectionFour .container .row .boxTwo .card:hover {
+.sectionFour .boxTwo .card.active {
+  margin-left: 35px;
+}
+.sectionFour .boxTwo .card:hover {
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
-.sectionFour .container .row .boxTwo .card .icon span {
+.sectionFour .boxTwo .card .icon span {
   background-color: #f9b757;
   padding: 10px 15px;
   border-radius: 50%;
@@ -254,18 +237,313 @@
   font-weight: 500;
   margin-left: 35px;
 }
-.sectionFour .container .row .boxTwo .card .text {
+.sectionFour .boxTwo .card .text {
   position: absolute;
   left: 50px;
   top: 15px;
   margin-left: 50px;
 }
-.sectionFour .container .row .boxTwo .card .text h3 {
+.sectionFour .boxTwo .card .text h3 {
   font-size: 17px;
   font-weight: 700;
 }
-.sectionFour .container .row .boxTwo .card .text h4 {
+.sectionFour .boxTwo .card .text h4 {
   font-size: 14px;
   font-weight: 500;
   color: gray;
+}
+
+.sectionFive {
+  padding: 7rem 0;
+  background-color: #fefbf6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sectionFive .boxLeft {
+  width: 40%;
+}
+.sectionFive .boxLeft img {
+  width: 35rem;
+}
+.sectionFive .boxRight {
+  width: 50%;
+  margin-left: 8rem;
+  margin-top: 4rem;
+}
+.sectionFive .boxRight h4 {
+  color: rgb(157, 155, 155);
+  font-size: 16px;
+  font-weight: 600;
+}
+.sectionFive .boxRight h3 {
+  width: 65%;
+  font-weight: 700;
+  font-size: 30px;
+  margin-top: 15px;
+}
+.sectionFive .boxRight .selection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.sectionFive .boxRight .selection a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 15px 0 auto;
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.sectionFive .boxRight .selection a:hover {
+  color: #fec76f;
+}
+.sectionFive .boxRight .selection a i {
+  color: #fec76f;
+  text-shadow: 5px 5px 10px #fec76f;
+}
+
+.sectionSix {
+  background-color: #fefbf6;
+}
+.sectionSix .text {
+  text-align: center;
+  padding: 20px 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sectionSix .text h2 {
+  color: #a8afb9;
+  font-size: 17px;
+  font-weight: 600;
+}
+.sectionSix .text h3 {
+  font-weight: 650;
+  color: #343f53;
+  width: 40%;
+  font-size: 30px;
+  margin: 20px auto;
+}
+.sectionSix .photocards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.sectionSix .photocards .card {
+  width: 200px;
+  padding: 17px;
+  margin: 30px 25px;
+  border: none;
+  transition: 0.4s;
+}
+.sectionSix .photocards .card:hover {
+  box-shadow: 0 5px 10px burlywood;
+}
+.sectionSix .photocards .card nav i {
+  margin: 0 5px;
+  transition: 0.4s;
+}
+.sectionSix .photocards .card nav i:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+.sectionSix .photocards .card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+.sectionSix .photocards .card h5 {
+  color: gray;
+  font-size: 14px;
+  font-weight: 400;
+}
+.sectionSix .photocards .card p {
+  font-size: 15px;
+  font-weight: 300;
+  color: #51555f;
+}
+.sectionSix .photocards .card #twitter {
+  color: #58a9d6;
+}
+.sectionSix .photocards .card #facebook {
+  color: #3f75ce;
+}
+.sectionSix .photocards .card #browser {
+  color: #ffb4cc;
+}
+.sectionSix .photocards img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.sectionSeven {
+  background-color: #fefbf6;
+  padding: 8rem 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.sectionSeven .box1 {
+  padding: 15px;
+}
+.sectionSeven .box1 h2 {
+  font-size: 18px;
+  font-weight: 650;
+  color: rgba(81, 85, 95, 0.4901960784);
+}
+.sectionSeven .box1 h3 {
+  font-size: 30px;
+  font-weight: 650;
+  color: #374154;
+  margin-top: 15px;
+}
+.sectionSeven .box1 p {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(81, 85, 95, 0.7294117647);
+  margin-top: 25px;
+}
+.sectionSeven .box2 {
+  padding: 15px;
+}
+.sectionSeven .box2 img {
+  width: 90%;
+}
+
+.sectionEight {
+  background-color: rgba(254, 251, 246, 0.5058823529);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  padding: 10rem 0;
+}
+.sectionEight .click {
+  display: flex;
+  justify-content: end;
+  margin-right: 8rem;
+  align-items: center;
+  gap: 10px;
+}
+.sectionEight .click i {
+  margin: 0;
+  line-height: 1;
+}
+.sectionEight .click a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: 400;
+  transition: 0.4s;
+}
+.sectionEight .click a:hover {
+  color: #f9b757;
+  text-shadow: 5px 5px 10px #f9b757;
+  transform: translateY(-7px);
+  cursor: pointer;
+}
+.sectionEight .click a span {
+  color: red;
+}
+.sectionEight .textCards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem 8rem;
+  flex-wrap: wrap;
+}
+.sectionEight .textCards .boxtext {
+  flex: 1;
+  margin-left: 50px;
+}
+.sectionEight .textCards .boxtext h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: rgba(81, 85, 95, 0.4588235294);
+}
+.sectionEight .textCards .boxtext h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.sectionEight .textCards .boxtext p {
+  font-size: 15px;
+  font-weight: 400;
+  color: rgba(96, 98, 119, 0.7725490196);
+}
+.sectionEight .textCards .boxtext a.free {
+  display: inline-block;
+  text-decoration: none;
+  color: #f1ab3b;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.sectionEight .textCards .boxtext a.free:hover {
+  text-shadow: 5px 5px 10px #f9b757;
+  text-decoration: underline;
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+.sectionEight .textCards a.prices {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f9b757;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+.sectionEight .textCards a.prices:hover {
+  box-shadow: 5px 5px 10px #f9b757;
+  transform: translateY(-3px);
+  cursor: pointer;
+}
+.sectionEight .textCards .cards {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.sectionEight .textCards .cards .card {
+  border-color: rgba(81, 85, 95, 0.1647058824);
+  box-shadow: 3px 3px 5px rgba(81, 85, 95, 0.0941176471);
+  padding: 4rem;
+  border-radius: 10px;
+  min-width: 200px;
+  align-items: center;
+}
+.sectionEight .textCards .cards .card h5 {
+  color: #202a37;
+  font-size: 25px;
+}
+.sectionEight .textCards .cards .card h5 span {
+  font-size: 35px;
+}
+.sectionEight .textCards .cards .card h5 #mo {
+  font-size: 15px;
+  color: rgba(81, 85, 95, 0.7764705882);
+}
+.sectionEight .textCards .cards .card h4 {
+  font-size: 18px;
+  font-weight: 650;
+  color: #2b2d33;
+}
+.sectionEight .textCards .cards .card ul li {
+  list-style: none;
+}
+.sectionEight .textCards .cards .card ul li i {
+  color: #f5945c;
+}
+.sectionEight .textCards .cards .card #plan {
+  margin-top: 19px;
+}
+.sectionEight .textCards .cards .card a.plan {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #f9b757;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+.sectionEight .textCards .cards .card a.plan:hover {
+  box-shadow: 5px 5px 10px #f9b757;
 }/*# sourceMappingURL=style.css.map */

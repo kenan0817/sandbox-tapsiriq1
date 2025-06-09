@@ -46,6 +46,11 @@
     text-align: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
+    .row {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .boxText {
         h6 {
             color: #adb2c1;
@@ -63,15 +68,6 @@
 
     .cards {
         margin-top: 45px;
-
-    }
-
-    .row {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
-        gap: 18px;
 
     }
 
@@ -143,63 +139,57 @@
     background-color: #fefbf6;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
-    .container {
-        .row {
-            padding: 7rem;
+    .boxLeft {
 
-            .boxLeft {
+        h2 {
+            color: #afb0b1;
+            font-size: 17px;
+            font-weight: 500;
 
-                h2 {
-                    color: #afb0b1;
-                    font-size: 17px;
-                    font-weight: 500;
+        }
 
-                }
+        h3 {
+            font-size: 30px;
+            font-weight: 650;
+            width: 90%;
+            color: #2e3d51;
 
-                h3 {
-                    font-size: 30px;
-                    font-weight: 650;
-                    width: 90%;
-                    color: #2e3d51;
+        }
 
-                }
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: #606277;
+            width: 75%;
+        }
 
-                p {
-                    font-size: 14px;
-                    font-weight: 400;
-                    color: #606277;
-                    width: 75%;
-                }
-
-                form {
-                    input {
-                        border: 1px solid gray;
-                        border-radius: 5px;
-                        padding: 10px 20px;
-                    }
-
-                    button {
-                        border: none;
-                        background-color: #f9b757;
-                        padding: 13px 24px;
-                        color: white;
-                        border-radius: 10px;
-                        transition: 0.4s;
-
-                        &:hover {
-                            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-                        }
-                    }
-                }
+        form {
+            input {
+                border: 1px solid gray;
+                border-radius: 5px;
+                padding: 10px 20px;
             }
 
-            .boxRight {
-                img {
-                    width: 100%;
-                    margin: 0 auto;
-                    display: block;
+            button {
+                border: none;
+                background-color: #f9b757;
+                padding: 13px 24px;
+                color: white;
+                border-radius: 10px;
+                transition: 0.4s;
+
+                &:hover {
+                    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
                 }
             }
+        }
+    }
+
+    .boxRight {
+        img {
+            width: 100%;
+            margin: 0 auto;
+            display: block;
         }
     }
 }
@@ -211,76 +201,70 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 7rem 0;
     background-color: #fefbf6;
-    .container {
-        .row {
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-            .boxOne {
-                width: 45%;
-                margin-left: 9rem;
-                
-                
-                h2 {
-                    font-size: 20px;
-                    color: #a8afb9;
-                    font-weight: 600;
-                    
-                }
-                h3{
-                    font-weight: 700;
-                    color: #343f53;
-                    width: 80%;
-                    font-size: 28px;
-                    
-                }
-                p{
-                    color: #51555f;
-                    font-size: 14px;
-                    margin-top: 25px;
-                    font-weight: 450;
-                    width: 75%;
-                    
-                }
-                a{
-                    display: inline-block;
-                    text-decoration: none;
-                    padding: 9px 16px;
-                    background-color: #f9b758;
-                    color: white;
-                    border-radius: 18px;
-                    font-size: 14px;
-                    font-weight: 500;
-                    margin-top: 20px;
-                    transition: 0.4s;
 
-                    &:hover{
-                        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    .boxOne {
+        h2 {
+            font-size: 20px;
+            color: #a8afb9;
+            font-weight: 600;
 
-                }
+        }
+
+        h3 {
+            font-weight: 700;
+            color: #343f53;
+            width: 80%;
+            font-size: 28px;
+
+        }
+
+        p {
+            color: #51555f;
+            font-size: 14px;
+            margin-top: 25px;
+            font-weight: 450;
+            width: 75%;
+
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            padding: 9px 16px;
+            background-color: #f9b758;
+            color: white;
+            border-radius: 18px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 20px;
+            transition: 0.4s;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
             }
         }
-        .boxTwo{
-            // width: 45%;
-            
-            display: flex;
-            align-items: end;
-            flex-direction: column;
-            gap: 2rem;
+    }
 
-            .card{
-                
-                position: relative;
-                padding: 30px 0;
-                width: 35%;
-                border-radius: 15px;
-                
-                &:hover{
-                    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-                }
-               .icon{
-                span{
+    .boxTwo {
+        .card {
+            &.active {
+                margin-left: 35px;
+            }
+
+            position: relative;
+            padding: 30px 0;
+            width: 90%;
+            border-radius: 15px;
+            margin: 20px 0;
+            transition: 0.4s;
+
+            &:hover {
+                box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            }
+
+            .icon {
+                span {
                     background-color: #f9b757;
                     padding: 10px 15px;
                     border-radius: 50%;
@@ -289,26 +273,384 @@
                     font-weight: 500;
                     margin-left: 35px;
                 }
-               }
-               .text{
+            }
+
+            .text {
                 position: absolute;
                 left: 50px;
                 top: 15px;
                 margin-left: 50px;
-                h3{
+
+                h3 {
                     font-size: 17px;
                     font-weight: 700;
                 }
-                h4{
+
+                h4 {
                     font-size: 14px;
                     font-weight: 500;
                     color: gray;
                 }
-               }
             }
         }
     }
-    
 }
 
+// /////////////////////sectionFour finished///////////////////////
+
+// ////////////////////sectionFive started///////////////////////
+.sectionFive {
+    padding: 7rem 0;
+    background-color: #fefbf6;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    .boxLeft {
+        // border: solid gray;
+        width: 40%;
+
+        img {
+            width: 35rem;
+        }
+    }
+
+    .boxRight {
+        // border: solid gray;
+        width: 50%;
+        margin-left: 8rem;
+        margin-top: 4rem;
+
+        h4 {
+            color: rgb(157, 155, 155);
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        h3 {
+            width: 65%;
+            font-weight: 700;
+            font-size: 30px;
+            margin-top: 15px;
+        }
+
+        .selection {
+            display: flex;
+            flex-direction: column;
+            margin-top: 35px;
+
+            a {
+                display: inline-block;
+                text-decoration: none;
+                margin: 15px 0 auto;
+                color: black;
+                font-size: 15px;
+                font-weight: 600;
+                transition: 0.4s;
+
+                &:hover {
+                    color: #fec76f;
+                }
+
+                i {
+                    color: #fec76f;
+                    text-shadow: 5px 5px 10px #fec76f;
+                }
+
+            }
+        }
+    }
 }
+
+// /////////////////////sectionFive finished///////////////////////
+.sectionSix {
+    // clip-path: polygon(61% 62%, 83% 58%, 100% 52%, 100% 70%, 100% 100%, 50% 100%, 0 100%, 0% 70%, 0 63%, 37% 64%);
+    background-color: #fefbf6;
+    
+
+    .text {
+        text-align: center;
+        padding: 20px 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        h2 {
+            color: #a8afb9;
+            font-size: 17px;
+            font-weight: 600;
+        }
+
+        h3 {
+            font-weight: 650;
+            color: #343f53;
+            width: 40%;
+            font-size: 30px;
+            margin: 20px auto;     }
+    }
+
+    .photocards {
+        
+        // .row {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        .card {
+                width: 200px;
+                padding: 17px;
+                margin: 30px 25px;
+                border: none;
+                transition: 0.4s;
+                &:hover {
+                   box-shadow: 0 5px 10px  burlywood; 
+                }
+
+                nav {
+                    i {
+                        margin: 0 5px;
+                        transition: 0.4s;
+
+                        &:hover {
+                            transform: translateY(-5px);
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                h4 {
+                    font-size: 15px;
+                    font-weight: 700;
+                    margin-top: 15px;
+                }
+
+                h5 {
+                    color: gray;
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                p {
+                    font-size: 15px;
+                    font-weight: 300;
+                    color: #51555f;
+                }
+
+
+                #twitter {
+                    color: #58a9d6;
+                }
+
+                #facebook {
+                    color: #3f75ce;
+                }
+
+                #browser {
+                    color: #ffb4cc;
+                }
+
+            }
+
+            img {
+                width: 70px;
+                border-radius: 50%;
+            }
+        }
+    }
+    .sectionSeven {
+        background-color: #fefbf6;
+       padding: 8rem 0;
+       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    .box1{
+        // border: solid gray;
+        padding: 15px;
+        // width: 40%;
+        h2{
+            font-size: 18px;
+            font-weight: 650;
+            color: #51555f7d;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 650;
+            color: #374154;
+            margin-top: 15px;
+        }
+        p{
+            font-size: 16px;
+            font-weight: 500;
+            color: #51555fba;
+            // width: 35%;
+            margin-top: 25px;
+        }
+        // .listIcons{
+        //     list-style: none;
+        //     // width: 40%;
+        //     li{
+        //        display: flex;
+        //        align-items: center;
+        //        gap: 10px;
+               
+        //     }
+           
+        }
+        .box2{
+            padding: 15px;
+            // width: 40%;
+            img{
+                width: 90%;
+            }
+            }
+    }
+    /////////////////////sectionSeven finished///////////////////////
+    
+    // /////////////////////sectionEight started///////////////////////
+    .sectionEight{
+        background-color: #fefbf681;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 10rem 0;
+        .click{
+            display: flex;
+            justify-content: end;
+            margin-right: 8rem;
+            align-items: center;
+            gap: 10px;
+            i{
+                margin: 0;
+                line-height: 1;
+            }
+            a{
+                display: inline-block;
+                text-decoration: none;
+                color: black;
+                font-size: 15px;
+                font-weight: 400;
+                transition: 0.4s;
+                &:hover{
+                   color: #f9b757;
+                   text-shadow: 5px 5px 10px #f9b757;
+                   transform: translateY(-7px);
+                            cursor: pointer;
+                }
+                span{
+                    color: red;
+                }
+            }
+        }
+        .textCards{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 2rem;
+            padding: 2rem 8rem;
+            flex-wrap: wrap;
+            .boxtext{
+                flex: 1;
+                margin-left: 50px;
+                h2{
+                    font-size: 17px;
+                    font-weight: 700;
+                    color: #51555f75;
+                }
+                h3{
+                    font-size: 30px;
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #606277c5;
+                }
+                    a.free{
+                        display: inline-block;
+                        text-decoration: none;
+                        color: #f1ab3b ;
+                        font-weight: 500;
+                        transition: 0.4s;
+
+                        &:hover{
+                            text-shadow: 5px 5px 10px #f9b757;
+                            text-decoration: underline; 
+                            transform: translateY(-2px);
+                            cursor: pointer;
+                        
+                    }
+                }
+                }
+                    a.prices{
+                        display: inline-block;
+                        text-decoration: none;
+                        background-color:#f9b757;
+                        color: white;
+                        padding: 10px 20px;
+                        border-radius: 25px;
+                        font-size: 13px;
+                        font-weight: 700;
+                        transition: 0.4s;
+                        &:hover{
+                            box-shadow: 5px 5px 10px #f9b757;
+                            transform: translateY(-3px);
+                            cursor: pointer; 
+                        }
+                    }
+                    .cards{
+                        flex: 2;
+                        display: flex;
+                        justify-content: center;
+                        // border: solid gray;
+                        // min-width: 300px;
+                        gap: 2rem;
+                        .card{
+                            border-color: #51555f2a;
+                            box-shadow: 3px 3px 5px #51555f18; 
+                            padding: 4rem;
+                            border-radius: 10px;
+                            min-width: 200px;
+                            // text-align: center;
+                            // border: solid gray;
+                            align-items: center;
+                            h5{
+                                color: #202a37;
+                                font-size: 25px;
+                                span{
+                                    font-size: 35px;
+                                }
+                                #mo{
+                                    font-size: 15px;
+                                    color: #51555fc6;
+                                }
+                            }
+                            h4{
+                                font-size: 18px;
+                                font-weight: 650;
+                                color: #2b2d33;
+                            }
+                            ul{
+                            
+                                li{
+                                    list-style: none;
+                                    i{
+                                        color: #f5945c;
+                                    }
+                                    
+                                }
+                            }
+                            #plan{
+                                margin-top: 19px;
+                            }
+                        a.plan{
+                            display: inline-block;
+                            text-decoration: none;
+                            background-color: #f9b757;
+                            color: white;
+                            padding: 10px 20px;
+                            border-radius: 25px;
+                            font-size: 14px;
+                            font-weight: 700;
+                            transition: 0.4s;
+                            &:hover{
+                                box-shadow: 5px 5px 10px #f9b757;
+                                
+                            }
+    
+                        }
+                        }
+                    }
+                }
+            }
+
